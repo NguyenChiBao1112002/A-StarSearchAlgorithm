@@ -1,0 +1,405 @@
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Style the button used to pause/play the video */
+#myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+#myBtn:hover {
+    background: #ddd;
+    color: black;
+}
+
+
+#parameters {
+    background: #000;
+    width: 200px;
+    text-align: center;
+    margin: 0;
+}
+
+
+.radio_btn_group_div {
+    display: inline-block;
+    margin: 10px;
+    height: 50px;
+}
+
+div.radio_btn_group_div{
+    font-size: 15px;
+}
+
+
+#parameters {
+    margin-top: 1px;
+}
+
+#data-container.h2 {
+    position: absolute;
+    margin-top: 1px;
+}
+
+
+
+#note>div {
+    display: inline-flex;
+    width: 200px;
+    text-align: justify;
+    font-size: 20px;
+}
+
+
+.radio_btn_group_div {
+    margin: 0;
+}
+
+#pseudocode {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #13C4E7;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+#pseudocode p{
+    font-weight: bold;
+}
+
+/*  */
+
+
+
+
+button.button_code {
+    background-size: 300% 100%!important;
+    background: linear-gradient(-225deg,#7742B2 0%,#F180FF 52%,#FD8BD9 100%);
+    position: relative;
+    /* display: none; */
+    display: inline-block;
+    /* height: 45px; */
+    line-height: 45px;
+    padding: 0 30px;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 15px 10px;
+    text-transform: uppercase;
+    box-shadow: 4px 4px 15px rgba(0,0,0,0.1);
+    font-weight: 500;
+}
+  	button.button_code:hover{
+    opacity: .8;
+    color: #fff;
+    transition: .3s;
+}
+    .button_code:before {
+    font-family: "Font Awesome 5 Pro","Font Awesome 5 Brands";
+    font-weight: 900;
+    display: inline-block;
+    margin: 0 5px 0 0;
+    margin-left: -30px;
+}
+  	.button_code.demo_code:before {
+    content: '\f121';
+    display: inline-block;
+    margin-right: 30px;
+    background: rgba(0,0,0,0.18);
+    border-radius: 5px 0 0 5px;
+    width: 45px;
+}
+ 	button.button_code.demo_code {
+    background: linear-gradient(135deg,#ff4c2e 0%,#f9a82f 45%,#ff4c2e 77%,#f7352e 100%);
+}
+
+
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .side.setting {
+    flex-basis: 25%;
+  }
+  
+  .side {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 75%;
+  }
+
+#code{
+    position: relative;
+    padding: 0px;
+    margin: 20px 20px;
+    width: 23%;
+    height: 100%;
+    float: right;
+    margin-bottom: 20px;
+}
+
+#code p {
+    text-align: left;
+}
+
+
+/*  */
+html body {
+    text-align: center;
+    background-color: #2d3436;
+    color: white;
+}
+
+.page-container {
+    top: 50px;
+    position: relative;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#width_input,
+#height_input {
+    display: block;
+}
+
+.ui.input {
+    padding: 5px;
+}
+
+#control-button-group {
+    margin-top: 0px;
+}
+
+#board_container {
+    /*margin-top: 100px;*/
+    display: inline-block;
+    border: 2px solid black;
+}
+
+#description {
+    width: 100%;
+    position: relative;
+    text-align: left;
+    padding-left: 10%;
+    /*padding-right: 20%;*/
+    margin-top: 3em;
+    /*height: 50px;*/
+}
+
+#defaultCanvas0 {
+    display: inline-block;
+}
+
+button {
+    display: block;
+}
+
+
+.ui.form .inline.fields label {
+    margin: 10px;
+    color: white !important;
+}
+
+.ui.form {
+    display: inline-block;
+    text-align: center;
+}
+
+#start_search {
+    display: inline-block;
+
+}
+
+#board-container {
+    /*margin-top: 100px;*/
+    display: inline-block;
+    /*width: 100%;*/
+    margin-top: 2em;
+    font-size: 10px;
+
+
+}
+
+.cell {
+    /*background-color: red;*/
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+}
+
+
+.radio_btn_group_div {}
+
+#data-container {
+    display: inline-block;
+    position: relative;
+    /* top: 2em; */
+}
+
+#data-container p {
+    text-align: left;
+}
+
+p {
+    margin: 0;
+}
+
+#simulator_speed {
+    height: 15px;
+    display: inline-block;
+}
+
+.slide-container p {
+    display: inline-block;
+}
+
+.column {
+    float: left;
+    /* padding: 10px; */
+    margin-right: 0.5px;
+}
+
+.main-container {
+    /* margin-top: 20px; */
+    margin-left: 30px;
+    width: 50%;
+}
+
+.column.side {
+    width: 20%;
+    position: relative;
+    top: 0em;
+    height: 100%;
+}
+
+.slide-container {
+    text-align: center;
+    display: inline-block;
+    width: 50%;
+}
+
+.column.side.setting {
+    position: relative;
+    padding: 3%;
+    margin: 20px 20px;
+}
+
+#board-size-setting {
+    display: inline-block;
+    text-align: center;
+}
+
+#data-content {
+    overflow: auto;
+    height: 100px;
+    width: 100%;
+    display: inline-block;
+}
+
+p a {
+    text-decoration: none;
+    color: white;
+}
+
+a {
+    color: #74b9ff;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: greenyellow;
+}
+
+#apply_setting {
+    margin-left: 0 !important;
+}
+
+@media screen and (max-width: 900px) {
+
+    .column.side.setting,
+    .column.main-container {
+        width: 100%;
+        height: auto;
+    }
+
+    .column.side {
+        height: auto;
+    }
+
+    .column.side.setting {
+        top: 0;
+        width: 100%;
+        padding: 0;
+    }
+
+    #data-container {
+        position: relative;
+        width: 50%;
+        margin: 0;
+        top: 1em;
+        height: auto;
+    }
+
+    #data-content {
+        padding-left: 5em;
+        padding-right: 5em;
+        height: auto;
+    }
+
+    #board-container {
+        margin: 0px;
+    }
+
+
+    #data-container.column.side {
+        width: 100%;
+        top: 0;
+
+
+        display: inline-block;
+        text-align: center;
+
+    }
+
+    .main-container {
+        margin-top: 0;
+    }
+
+    #board-container {
+        margin-top: 2em;
+    }
+}
