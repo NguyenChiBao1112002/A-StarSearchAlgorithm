@@ -8,21 +8,19 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.css"
       integrity="sha256-QVBN0oT74UhpCtEo4Ko+k3sNo+ykJFBBtGduw13V9vw="
-      crossorigin="anonymous"
-      />
+      crossorigin="anonymous" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-      />
+      crossorigin="anonymous" />
     <link rel="stylesheet" href="./main.css" />
     <link href='https://cdn.jsdelivr.net/gh/startinhit/font-awesome/css/all.css'
-      rel='stylesheet'/>
+      rel='stylesheet' />
   </head>
   <body>
     <video autoplay muted loop id="myVideo">
-      <source src="pinterestdownloader.com-1678205039.026762.mp4"
+      <source src="background.mp4"
         type="video/mp4">
     </video>
     <div class="page-container">
@@ -41,8 +39,7 @@
                   id="width_input"
                   class="dimension-input"
                   type="text"
-                  placeholder="Width"
-                  />
+                  placeholder="Width" />
               </div>
               <div class="ui input">
                 <input
@@ -50,8 +47,7 @@
                   id="height_input"
                   class="dimension-input"
                   type="text"
-                  placeholder="Height"
-                  />
+                  placeholder="Height" />
               </div>
               <br />
               <button
@@ -75,8 +71,7 @@
               min="1"
               max="100"
               value="50"
-              id="simulator_speed"
-              /><br />
+              id="simulator_speed" /><br />
             <p>Frame Rate: <span id="speed_display"></span></p>
           </div>
 
@@ -124,37 +119,37 @@
         <button class="button_code demo_code" id="btn_code">HIDE CODE</button>
         <!-- <button class="btn btn-primary button_code demo_code"  id="btn_code">HI CODE</button> -->
         <div id="pseudocode">
-            <p>g(n<sub>o</sub>) = 0; f(n<sub>o</sub>) = h(n<sub>o</sub>);</p>
-            <p>open:= [n<sub>o</sub>]; closed:= [];</p>
-            <p>while ( !empty(open) )</p>
-            <p>&emsp;remove n from the left of open and add n to closed;</p>
-            <p>&emsp;if (n is the goal)</p>
-            <p>&emsp;&emsp;success, exit;</p>
-            <p>&emsp;else </p>
-            <p>&emsp;&emsp;Generate all children m of n;</p>
-            <p>&emsp;&emsp;for m in children(n)</p>
-            <p>&emsp;&emsp;&emsp;g(m) = g(n) + c[n, m];</p>
-            <p>&emsp;&emsp;&emsp;if m is neither in open nor in closed</p>
-            <p>&emsp;&emsp;&emsp;&emsp;f(m) = g(m) + h(m);</p>
-            <p>&emsp;&emsp;&emsp;&emsp;parent(m) = n; </p>
-            <p>&emsp;&emsp;&emsp;&emsp;Add m to open;</p>
-            <p>&emsp;&emsp;&emsp;if m is in open (there exists m’ in open such that m = m’)</p>
-            <p>&emsp;&emsp;&emsp;&emsp;if g(m) < g(m’)</p>
-            <p>&emsp;&emsp;&emsp;&emsp;&emsp;g(m’) = g(m); </p>
-            <p>&emsp;&emsp;&emsp;&emsp;&emsp;f(m’) = g(m’) + h(m’);</p>
-            <p>&emsp;&emsp;&emsp;&emsp;&emsp;parent(m’) = n;</p>
-            <p>&emsp;&emsp;&emsp;if m is in closed (there exists m’ in closed such that m’ = m)</p>
-            <p>&emsp;&emsp;&emsp;&emsp;if g(m) < g(m’)</p>
-            <p>&emsp;&emsp;&emsp;&emsp;&emsp;f(m) = g(m) + h(m);</p>
-            <p>&emsp;&emsp;&emsp;&emsp;&emsp;parent(m) = n;</p>
-            <p>&emsp;&emsp;&emsp;&emsp;&emsp;Add m to open;</p>
-            <p>&emsp;&emsp;&emsp;&emsp;&emsp;remove m’ from closed;</p>
-            <p>&emsp;&emsp;Sort open by increasing f(n) values;</p>
+          <p>g(n<sub>o</sub>) = 0; f(n<sub>o</sub>) = h(n<sub>o</sub>);</p>
+          <p>open:= [n<sub>o</sub>]; closed:= [];</p>
+          <p>while ( !empty(open) )</p>
+          <p>&emsp;remove n from the left of open and add n to closed;</p>
+          <p>&emsp;if (n is the goal)</p>
+          <p>&emsp;&emsp;success, exit;</p>
+          <p>&emsp;else </p>
+          <p>&emsp;&emsp;Generate all children m of n;</p>
+          <p>&emsp;&emsp;for m in children(n)</p>
+          <p>&emsp;&emsp;&emsp;g(m) = g(n) + c[n, m];</p>
+          <p>&emsp;&emsp;&emsp;if m is neither in open nor in closed</p>
+          <p>&emsp;&emsp;&emsp;&emsp;f(m) = g(m) + h(m);</p>
+          <p>&emsp;&emsp;&emsp;&emsp;parent(m) = n; </p>
+          <p>&emsp;&emsp;&emsp;&emsp;Add m to open;</p>
+          <p>&emsp;&emsp;&emsp;if m is in open (there exists m’ in open such
+            that m = m’)</p>
+          <p>&emsp;&emsp;&emsp;&emsp;if g(m) < g(m’)</p>
+          <p>&emsp;&emsp;&emsp;&emsp;&emsp;g(m’) = g(m); </p>
+          <p>&emsp;&emsp;&emsp;&emsp;&emsp;f(m’) = g(m’) + h(m’);</p>
+          <p>&emsp;&emsp;&emsp;&emsp;&emsp;parent(m’) = n;</p>
+          <p>&emsp;&emsp;&emsp;if m is in closed (there exists m’ in closed such
+            that m’ = m)</p>
+          <p>&emsp;&emsp;&emsp;&emsp;if g(m) < g(m’)</p>
+          <p>&emsp;&emsp;&emsp;&emsp;&emsp;f(m) = g(m) + h(m);</p>
+          <p>&emsp;&emsp;&emsp;&emsp;&emsp;parent(m) = n;</p>
+          <p>&emsp;&emsp;&emsp;&emsp;&emsp;Add m to open;</p>
+          <p>&emsp;&emsp;&emsp;&emsp;&emsp;remove m’ from closed;</p>
+          <p>&emsp;&emsp;Sort open by increasing f(n) values;</p>
         </div>
 
       </div>
-
-
 
       <div class="main-container column">
         <!--Selecting mode-->
@@ -169,9 +164,9 @@
               name="select_mode"
               class="custom-control-input"
               value="wall"
-              checked="checked"
-              />
-            <label class="custom-control-label" for="select_mode1"><b>Wall</b></label>
+              checked="checked" />
+            <label class="custom-control-label"
+              for="select_mode1"><b>Wall</b></label>
           </div>
           <div class="custom-control custom-radio custom-control-inline">
             <input
@@ -179,9 +174,9 @@
               id="select_mode2"
               name="select_mode"
               class="custom-control-input"
-              value="clear"
-              />
-            <label class="custom-control-label" for="select_mode2"><b>Clear</b></label>
+              value="clear" />
+            <label class="custom-control-label"
+              for="select_mode2"><b>Clear</b></label>
           </div>
           <div class="custom-control custom-radio custom-control-inline">
             <input
@@ -189,9 +184,9 @@
               id="select_mode3"
               name="select_mode"
               class="custom-control-input"
-              value="source"
-              />
-            <label class="custom-control-label" for="select_mode3"><b>Source</b></label>
+              value="source" />
+            <label class="custom-control-label"
+              for="select_mode3"><b>Source</b></label>
           </div>
           <div class="custom-control custom-radio custom-control-inline">
             <input
@@ -199,9 +194,9 @@
               id="select_mode4"
               name="select_mode"
               class="custom-control-input"
-              value="target"
-              />
-            <label class="custom-control-label" for="select_mode4"><b>Target</b></label>
+              value="target" />
+            <label class="custom-control-label"
+              for="select_mode4"><b>Target</b></label>
           </div>
         </div>
 
