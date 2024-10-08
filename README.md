@@ -6,9 +6,10 @@
 > **You can clone the project and run it in Visual Studio Code <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/768px-Visual_Studio_Code_1.35_icon.svg.png" width="30" height="30" /> 
  (very easy honey 😂😘😍).**
 
+![stars-100](https://github.com/user-attachments/assets/94870fe4-2834-485e-b85c-d7fc8e3cd444)
 
 
-<img src="badges/stars/stars-20000.png" alt="stars-20000" width="64">
+<img src="https://github.com/user-attachments/assets/94870fe4-2834-485e-b85c-d7fc8e3cd444" alt="stars-20000" width="64">
 **Pseudo Code:**
 function A_Star(start, goal)
     open_set = priority_queue()
