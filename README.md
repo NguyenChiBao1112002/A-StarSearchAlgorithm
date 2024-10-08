@@ -8,7 +8,8 @@
 
 
 
-<img src="badges/stars/stars-20000.png" alt="stars-20000" width="64">**Pseudo Code:**
+<img src="badges/stars/stars-20000.png" alt="stars-20000" width="64">
+**Pseudo Code:**
 function A_Star(start, goal)
     open_set = priority_queue()
     closed_set = empty_set()
