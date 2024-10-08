@@ -57,7 +57,8 @@ function reconstruct_path(came_from, current)
 
 
 ## **Example:**
-![image](https://github.com/user-attachments/assets/d3add3ba-57ef-40f0-b0b7-3a5a6451f42a)
+![image](https://github.com/user-attachments/assets/0f24590d-38db-454b-876a-05fb2441be3b)
+
 
 
 
