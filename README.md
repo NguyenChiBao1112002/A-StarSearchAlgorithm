@@ -6,7 +6,9 @@
 > **You can clone the project and run it in Visual Studio Code <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/768px-Visual_Studio_Code_1.35_icon.svg.png" width="30" height="30" /> 
  (very easy honey 😂😘😍).**
 
-**Pseudo Code:**
+
+## **<img src="https://raw.githubusercontent.com/my-badges/my-badges/master/badges/public-keys/public-keys-1.png" width="40">Pseudo Code:**
+```yaml
 function A_Star(start, goal)
     open_set = priority_queue()
     closed_set = empty_set()
@@ -51,8 +53,11 @@ function reconstruct_path(came_from, current)
         current = came_from[current]
         total_path.prepend(current)
     return total_path
+```
 
 
+## **Example:**
+![image](https://github.com/user-attachments/assets/d3add3ba-57ef-40f0-b0b7-3a5a6451f42a)
 
-**Example:**
+
 
